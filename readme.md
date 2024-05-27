@@ -26,6 +26,7 @@ http://localhost:8888
 ---
 ## Caso queira rodar o projeto localmente:
 > Certifique-se de que o **Python 3.11** e o **Poetry** estão instalados em sua máquina.
+
 1 - Entre na pasta do projeto e execute o comando:
 ```bash
 pip install poetry
