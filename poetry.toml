@@ -1,0 +1,9 @@
+[installer]
+no-binary = [":none:"]
+
+[virtualenvs]
+in-project = true
+prompt = "venv:3.11"
+
+[virtualenvs.options]
+no-setuptools = true
