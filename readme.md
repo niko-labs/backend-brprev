@@ -80,6 +80,7 @@ http://localhost:8888
 ---
 
 7 - Veja o vídeo com os passos acima:
+https://github.com/niko-labs/backend-brprev/assets/59735468/eaa8c70d-af50-4536-a1ac-dbd4ddecf829
 <center>
 <video width="480" height="360" controls>
   <source src="./docs/steps/testes-endpoints-01.mp4" type="video/mp4">
