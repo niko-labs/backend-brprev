@@ -20,9 +20,8 @@ def criar_cliente(comando: CriarCliente, uow: UoW):
         try:
             cliente = repo.criar(cliente)
             uow.commit()
-        except Exception as e:
+        except Exception:
             uow.rollback()
-            msg = f"Erro durante a criação do cliente: {str(e)}"
-            raise ErroAoCriarCliente(detail=msg, status_code=500)
+            raise ErroAoCriarCliente()
 
     return cliente

@@ -46,15 +46,18 @@ def upgrade() -> None:
         sa.PrimaryKeyConstraint("id"),
     )
     op.create_index(
-        "ix_produtos_data_da_contratacao", "plano", ["data_da_contratacao"], unique=True
+        "ix_produtos_data_da_contratacao",
+        "plano",
+        ["data_da_contratacao"],
+        unique=False,
     )
-    op.create_index("ix_produtos_id_cliente", "plano", ["id_cliente"], unique=True)
-    op.create_index("ix_produtos_id_produto", "plano", ["id_produto"], unique=True)
+    op.create_index("ix_produtos_id_cliente", "plano", ["id_cliente"], unique=False)
+    op.create_index("ix_produtos_id_produto", "plano", ["id_produto"], unique=False)
     op.create_index(
         "ix_produtos_idade_de_aposentadoria",
         "plano",
         ["idade_de_aposentadoria"],
-        unique=True,
+        unique=False,
     )
     # ### end Alembic commands ###
 

@@ -117,8 +117,8 @@ def realizar_resgate_do_plano(comando: RealizarResgateDoPlano, uow: UoW):
         if not produto:
             raise ErroProdutoNaoEncontrado()
 
-        if not produto.carencia_inicial_de_resgate < plano.dias_desde_contratacao:
-            raise ErroPlanoSendoResgatadoAntesDoPeridoDeCarencia()
+        # if not produto.carencia_inicial_de_resgate < plano.dias_desde_contratacao:
+        #     raise ErroPlanoSendoResgatadoAntesDoPeridoDeCarencia()
 
         if (
             plano.dias_desde_ultimo_resgate is not None

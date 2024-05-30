@@ -20,11 +20,11 @@ tabela_plano = Table(
     # CONFIGURACAO DE CHAVES E INDICES E CONSTRAINTS
     sa.ForeignKeyConstraint(["id_produto"], ["produtos.id"]),
     sa.ForeignKeyConstraint(["id_cliente"], ["clientes.id"]),
-    sa.Index("ix_produtos_id_produto", "id_produto", unique=True),
-    sa.Index("ix_produtos_id_cliente", "id_cliente", unique=True),
-    sa.Index("ix_produtos_data_da_contratacao", "data_da_contratacao", unique=True),
+    sa.Index("ix_produtos_id_produto", "id_produto", unique=False),
+    sa.Index("ix_produtos_id_cliente", "id_cliente", unique=False),
+    sa.Index("ix_produtos_data_da_contratacao", "data_da_contratacao", unique=False),
     sa.Index(
-        "ix_produtos_idade_de_aposentadoria", "idade_de_aposentadoria", unique=True
+        "ix_produtos_idade_de_aposentadoria", "idade_de_aposentadoria", unique=False
     ),
     sa.CheckConstraint("aporte >= 0", name="ck_produtos_aporte"),
     sa.CheckConstraint("idade_de_aposentadoria > 0", name="ck_idade_de_aposentadoria"),
