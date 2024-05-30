@@ -82,7 +82,7 @@ http://localhost:8888
 7 - Veja o vídeo com os passos acima:
 <center>
 <video width="480" height="360" controls>
-  <source src="./docs/steps/testes-endpoints.mp4" type="video/mp4">
+  <source src="./docs/steps/testes-endpoints-01.mp4" type="video/mp4">
 </video>
 </center>
 
