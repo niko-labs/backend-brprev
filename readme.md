@@ -24,7 +24,53 @@ http://localhost:8888
 <img src="./docs/screen.png" alt="API" style="width: 100%;"/>
 
 ---
-## Caso queira rodar o projeto localmente:
+
+## :test_tube: Testes dos Endpoints:
+
+1 - Acesse a documentação da API:
+<img src="./docs/steps/1.png" alt="API" style="width: 100%;"/>
+
+> Aqui você pode testar os endpoints da API pelo próprio Swagger. Está disponível para testes os endpoints de **Clientes**, **Produtos** e **Planos**.
+
+2 - Navegue até o endpoint de ***Clientes*** e clique em **Try it out**:
+<img src="./docs/steps/2.png" alt="API" style="width: 100%;"/>
+- Insira os dados do cliente e clique em **Execute**.
+<img src="./docs/steps/3.png" alt="API" style="width: 100%;"/>
+- O cliente será cadastrado e você receberá um **Response Code 201** com o **ID** do cliente.
+
+3 - Navegue até o endpoint de ***Produtos*** e clique em **Try it out**:
+<img src="./docs/steps/4.png" alt="API" style="width: 100%;"/>
+- Insira os dados do produto e clique em **Execute**.
+<img src="./docs/steps/5.png" alt="API" style="width: 100%;"/>
+- O produto será cadastrado e você receberá um **Response Code 201** com o **ID** do produto.
+
+4 - Navegue até o endpoint de ***Planos*** e clique em **Try it out**:
+<img src="./docs/steps/6.png" alt="API" style="width: 100%;"/>
+- Insira os dados do plano e clique em **Execute**.
+<img src="./docs/steps/7.png" alt="API" style="width: 100%;"/>
+- O plano será cadastrado e você receberá um **Response Code 201** com o **ID** do plano.
+
+5 - Navegue até o endpoint de ***Plano -> Aporte Extra*** e clique em **Try it out**:
+<img src="./docs/steps/8.png" alt="API" style="width: 100%;"/>
+- Insira os dados do aporte extra e clique em **Execute**.
+- O aporte extra será cadastrado e você receberá um **Response Code 200** com o **ID** do aporte extra.
+
+6 - Navegue até o endpoint de ***Plano -> Resgate*** e clique em **Try it out**:
+<img src="./docs/steps/9.png" alt="API" style="width: 100%;"/>
+- O aporte extra será cadastrado e você receberá um **Response Code 200** com o **ID** do resgate.
+
+---
+7 - Veja o vídeo com os passos acima:
+<center>
+<video width="480" height="360" controls>
+  <source src="./docs/steps/testes-endpoints.mp4" type="video/mp4">
+</video>
+</center>
+
+----
+> 
+----
+## Rodando o projeto localmente:
 > Certifique-se de que o **Python 3.11** e o **Poetry** estão instalados em sua máquina.
 
 1 - Entre na pasta do projeto e execute o comando:
